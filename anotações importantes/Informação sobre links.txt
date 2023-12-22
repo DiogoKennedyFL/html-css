@@ -1,0 +1,5 @@
+Para links, utiliza a tag a, e para ficar
+na mesma pagina, ou seja, ir para outro
+link e não sair da pagina, utiliza o
+target="_self", agora para abrir outra
+página, utiliza o target"_blank"

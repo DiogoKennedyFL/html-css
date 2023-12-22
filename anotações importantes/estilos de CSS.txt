@@ -1,0 +1,17 @@
+Os estilos de CSS são:
+estilo inline, estilo interno, estilo externo
+evite usar o estilo inline,
+a melhor coisa é utilizar o iterno, ou
+externo, ou logo os dois misturando.
+Pode usar o inline, mas tente evitar ao
+maximo, no maximo utilize em 1 tag em uma
+página por exemplo.
+
+==informação importante==
+background-color é para cor de fundo na CSS
+já o color, é cor da letra
+font-family é a fonte da letra
+font-align pode colocar onde irá ficar as
+coisas no site, e tbm pode ser usado para
+deixar as letras alinhadas, usando o
+justify

@@ -1,0 +1,39 @@
+o font family, quando são mais de duas palavras, obrigatoriamente
+vc deve colocar 1 aspa ou 2 aspas, assim '', exemplo:
+
+font-family: 'Courier New';
+
+ou
+
+font-family: "Courier New";
+
+
+é muito bom vc deixar o font family assim:
+
+font-family: Arial, Helvetica, sans-serif;
+
+pois existem dispositivos que não tem arial,
+ou não tem Helvetica, então ele busca uma
+sans-serif, então na duvida, se coloca esta opção, 
+pq se o dispostivo não achar esta fonte na maquina
+dele de quem está acessando o site, automaticamente
+com o código, a maquina irá procurar a outra opção 
+de fonte. Como a arial, á helvetica e a sans-serif 
+são iguais, ou seja, tudo da categoria sans-self, 
+então isto é bom pq se n tiver uma fonte instalada,
+vai poder ter outra e vai ser melhor assim pq assim
+n irá "bugar" e todos terão acesso ao conteudo que
+o site quer mostrar ao público. Essas 3 fontes são 
+chamadas de "safe font combinations" por assim dizer,
+pq elas se combinam, então caso vc queira outras fontes 
+que se combinem, pesquise no google sobre: 
+"css web safe fonts combinations". um site bom é a W3S.
+exemplo disso tudo:
+
+font-family: Arial, Helvetica, sans-self;
+
+se vc perceber bem este código de cima, irá notar que ele
+finaliza com a categoria, o mais recomendavel é isso, pois se
+n tiver as fontes arial e nem helvetica instalada no dispositivo
+das pessoas, então ele irá procurar outra fonte do tipo sans-self
+que é compativel com o dispotivo, que está instalado nele.

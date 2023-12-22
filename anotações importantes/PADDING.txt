@@ -1,0 +1,14 @@
+4 propriedades do padding, sendo elas o:
+padding top (cima), padding-right (direita),
+padding-bottom (baixo), padding-left (esquerda)
+
+a odem é como se fosse um relogio girando
+tipo, começa em cima, direita, baixo, e no fim
+esquerda, como o ponteiro do relogio
+
+dica: se o dev tools do google, no inspecionar
+para testar as medidas sem ter que mexer direta
+mente no site
+
+REVEJA O CAP 15, TODAS AS AULAS, PRINCIPALMENTE
+SOBRE OS ID E CLASS NO CSS

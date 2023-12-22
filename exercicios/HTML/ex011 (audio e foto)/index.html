@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/Foto-p.png" type="image/png">
+        <source media=" (max-width: 1050px)" srcset="imagens/Foto-m.png" type="image/png">
+        <img src="imagens/Foto-g.png" alt="Imagem fléxivel">
+    </picture>
+    <h1>Audio</h1>
+    <p>Tocando o aúdio em HTML5.</p>
+    <audio src="midia/Dramatic Series Theme - Freedom Trail Studio.mp3" controls autoplay></audio>
+    <p>Outro aúdio em HTML5.</p>
+    <audio src="midia/guanacast-33.mp3" controls autoplay></audio>
+    <h1>Audio HTML5</h1>
+    <p>Código quase diferente para colocar musicas, só que agora tem como colocar em looping também</p>
+    <audio controls autoplay loop>
+        <source src="midia/Dramatic Series Theme - Freedom Trail Studio.mp3" type="audio/mpeg">
+        <source src="midia/Dramatic Series Theme - Freedom Trail Studio.mp3" type="audio/ogg">
+        <source src="midia/Dramatic Series Theme - Freedom Trail Studio.mp3" type="audio/mkv">
+        <p>Infelizmente o aúdio não está disponivel no seu navegador, <a href="midia/Dramatic Series Theme - Freedom Trail Studio.mp3">clique aqui para fazer o download</a></p>
+        <!-- Caso os aúdios não apareça no navegador, irá aparecer o aviso "Infelizmente o aúdio não está disponivel no seu navegador, clique aqui para fazer o download"-->
+</body>
+</html>

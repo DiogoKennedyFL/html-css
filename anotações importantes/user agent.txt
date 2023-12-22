@@ -1,0 +1,3 @@
+user agent = configuração do navegador
+todo box-level, tem o display block
+já o inline-level não tem essa configuração

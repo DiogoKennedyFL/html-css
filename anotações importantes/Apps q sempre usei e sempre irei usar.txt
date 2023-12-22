@@ -1,0 +1,10 @@
+apps q usei
+.vscode
+ -extensões
+ =EsLint
+ =PHP Debug
+ =PHP Extension Pack
+ =PHP IntelliSense
+ =Portuguese (Brazil) Language Pack for Visual Studio Code
+.gimp
+.extensão para navegador chamado "ColorZilla"

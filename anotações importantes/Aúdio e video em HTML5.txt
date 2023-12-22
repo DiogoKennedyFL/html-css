@@ -1,0 +1,44 @@
+Para colocar aúdio, o mais recomendavel é isto:
+    
+    <audio controls autoplay loop>
+        <source src="midia/Dramatic Series Theme - Freedom Trail Studio.mp3" type="audio/mpeg">
+        	<p>Infelizmente o aúdio não está disponivel no seu navegador, <a href="midia/Dramatic Series Theme - Freedom Trail Studio.mp3">clique aqui para fazer o download</a></p>
+    </audio>
+
+
+o codigo pode começar com <audio controls autoplay>, ou seja, o controls é para aparecer a janela, o botaozinho para poder dar o play na musica no site, já o autoplay
+é para aparecer a opção de começar o audio. Você também pode colocar <audio controls autoplay loop>, o loop já diz, quer dizer que toda vez que o aúdio acabar, ele
+fica em looping, ou seja, recomeça o aúdio a tocar tudo de novo infinitamente até que a pessoa aperte o botão de pause
+
+
+====VIDEO====
+Em HTML5, se pode colocar videos do tipo mp4, p4v, ogv e webm
+para a capa de video, tem que ser exatamente o mesmo tamanho de tela do video, caso a foto seje maior, modifique com o GIMP ou outro editor de fotos, ou então use o
+codigo HEIGHT(altura) e o WIDTH(largura) se preciso
+o video é o mesmo que o audio, o comando é 
+<video src="" controls></video>
+o controls é essencial para aparecer o play de video, caso o video esteja muito grande em tamanho, podemos diminuir com o comando width, ficando assim por exemplo:
+<video src="" width="560" controls></video>
+para deixar em loop o video é a mesma coisa que o aúdio, basta colocar assim:
+<video src="" width="560" controls loop></video>
+se pode colocar o width de varios tamanhos, mas um exemplo de tamanho é o 560 mesmo
+(VOCÊ PODE FAZER O MESMO COM O VIDEO O QUE FEZ EM AÚDIO)
+    
+    <video width="560" controls>
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.mkv" type="video/mkv">
+        <source src="midia/meu-video.ogv" type="video/ogv">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <p>Infelizmente o seu navegador não tem compatibilidade com o video</p>
+    </video>	
+
+(LEMBRANDO, O TYPE É SÓ PARA O NAVEGADOR MEIO QUE ENTENDER, MAS N É OBRIGATORIAMENTE PRECISO COLOCAR NA TEORIA, MAS SEMPRE É BOM COLOCAR O TYPE DO QUE SE TRATA ISSO)
+PARA COLOCAR MINIATURA NO VIDEO, BASTA COLOCAR O COMANDO POSTER DENTRO DA TAG VIDEO, EXEMPLO:
+    
+<video width="560" poster="" controls>
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.mkv" type="video/mkv">
+        <source src="midia/meu-video.ogv" type="video/ogv">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <p>Infelizmente o seu navegador não tem compatibilidade com este o video</p>
+    </video>	

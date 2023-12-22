@@ -1,0 +1,3 @@
+margin = borda para fora
+border = borda
+padding = borda para dentro

@@ -1,0 +1,5 @@
+Index é página principal, como só temos
+uma página, então colocamos index sempre
+nos exercicios de 1 pagina, e apos colocar
+o index, colocamos o .html, para podemos
+utilizar a linguagem de marcação html

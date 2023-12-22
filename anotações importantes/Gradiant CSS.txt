@@ -1,0 +1,58 @@
+para degradê em CSS, utiliza o background-image
+e coloca a opçãode linear-gradient, ou seja, você
+irá escolher para onde fica o gradient, o degradê
+e depois de dizer, vc coloca virgula, coloca a primeira
+cor, coloca virgula, e coloca a 2 cor, e agora vai ficar
+com gradient para o lado que vc escolheu, como por exemplo:
+
+background-image: linear-gradient(to right, white, blue);
+
+Se for deixar assim:
+background-image: linear-gradient(to top, white, blue);
+
+significa que o gradient está para cima, para cima é
+top, para baixo é bottom, para a esquerda é left e para a direita é right.
+Se for deixar o gradient para cima ou para baixo, precisa fazer uma
+configuração global na css, utilizando * obviamente
+* = configuração global, funciona como seletor
+para deixar o gradient para cima pra n ficar partido em
+varias partes, vc usa o height, significando altura traduzindo
+do ingles para o portugues, aí vc coloca height:100%;
+para ocupar 100% da tela
+
+para o fundo fixar fixo, utiliza o background-attachment: fixed;
+
+se vc quer colocar um angulo mais especifico de onde vai ficar o
+gradient vc pode colocar em graus, colocando o numero e o deg em
+seguida para indicar que são graus, como 45deg, exemplo
+
+background-image: linear-gradient(45deg, #8F09DC, #EA0259, #F6B80B);
+
+podemos colocar o numero até em negativo, como -45, ficando ao contrario
+o lado do gradiant
+
+vc pode colocar o radial-gradiant tambem, só que para usar não se usa mais
+colocando onde irá ficar o gradiant, e sim irá colocar formas, como circulo
+deixando o gradiant em forma de circulo, exemplo:
+
+background-image: radial-gradient(circle, #8F09DC, #EA0259, #F6B80B);
+
+tem como colocar a porcentagem de quanto vai querer que cada cor apareça na
+tela, colocando a porcentagem depois dá cor, isso ainda dentro da virgula. Exemplo:
+
+background-image: linear-gradient(-135deg, #8F09DC 1%, #EA0259, #F6B80B);
+
+border-radius serve para deixar arredondado
+para sombra, utiliza o box-shadow, onde o parametro é quanto a sombra anda para o lado,
+o segundo é quanto essa sombra vai andar para baixo, o terceiro parametro é quanto essa
+sombra vai espalhar, e o ultimo parametro é o tanto de transparencia essa sombra vai ter,
+ou seja, a cor
+
+o padding é para deixar mais gordinho por assim dizer, eu recomendo deixar assim:
+padding: 10px;
+
+para deixar as coisas no meio da tela, é só utilizar o seletor margin, exemplo:
+
+margin: auto;
+
+==EM GERAL, ESTUDE O EXERCICIO 16==

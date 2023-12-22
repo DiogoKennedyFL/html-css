@@ -1,0 +1,15 @@
+Para calcular o tanto de banda que vai
+consumir o seu site, basta sla, multiplicar
+o video sla, o mais leve, por o tanto de
+pessoas que acessam o site por dia,
+e divide pelo seu multiplo, pode ser 1024
+na maioria das hipoteses, o resultado é
+o tanto de banda, ou seja, o seu cliente
+irá pagar mais além do que ele já paga
+de hospedagem.
+
+Aparentemente, não se pode colocar no
+seu site videos que tenham copyright
+
+(MANTENHA A ATENÇÃO SEMPRE NOS DIREITOS
+AUTORAIS)

@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+
+
+@font-face {
+    font-family: 'blackops';
+    src: url(fontes/BlackOpsOne-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #91fc89;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom,  #61E657, #2F702B);
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    background-color: white;
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+header > p{
+    text-align: center;
+}
+
+nav{
+    padding-top: 25px;
+}
+
+nav > a{
+   padding-left: 7px;
+    padding-right: 18px;
+   color: white; 
+   font-weight: bolder;
+   text-decoration: none;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    background-color: #1E471B;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h2{
+    font-family: 'blackops', Times, serif;
+    color: #40993A;
+
+}h3{
+    font-family: 'blackops', Times, serif;
+    background-image: linear-gradient(to right, #61E657 , #ffffff 80%);
+    color: #2cb123;
+    padding-left: 10px;
+}
+
+#destaque{
+    background-color: #85ff7c85; 
+    color:#1E471B;
+}
+
+#foto{
+    text-align: center;
+}
+
+#video{
+    background-color: #1E471B;
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+}
+
+#duvidas{
+    background-color: #61E657;
+    border-radius: 15px 15px 15px 15px;
+    color: white;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+#duvidas >p > strong{
+    padding: 10px 0px 0px 10px;
+}
+
+#duvidas > article{
+    background-color: #57E6B0;
+    border-radius: 0px 0px 15px 15px;
+    color: black;
+    padding: 10px;
+}
+
+p{
+    text-align: justify;
+}
+
+footer{
+    background-color: #1E471B;
+    padding: 0px;
+    margin: 15px 0px 0px 0px;
+    color: white;
+    text-align: center;
+}
+
+footer > p{
+    margin: 0px;
+    text-align: center;
+}

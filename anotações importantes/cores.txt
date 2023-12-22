@@ -1,0 +1,15 @@
+existe cores por nome, e existe cores
+por hexadecimais, onde tem mais opção de
+cores
+em hexadecimais, se utiliza o # primeiro
+e os hexadecimais depois, sendo eles 6
+nas cores, mas os hexadecimais em si são
+16, sendo eles o:
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+se pode colocar tambem utilizando o rgb
+
+GIMP
+PADRÃO DE L, C, h
+L = 100
+C = 0,0
+h = 141,2
