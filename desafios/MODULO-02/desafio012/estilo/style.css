@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'PassionOne';
+    src: url(/desafios/MODULO-02/desafio012/fontes/PassionOne-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Sriracha;
+    src: url(/desafios/MODULO-02/desafio012/fontes/Sriracha-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    padding: 100px;
+}
+
+header h1 {
+    color: white;
+    font-family: 'PassionOne', Times, serif;
+    font-size: 132px;
+}
+
+header p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+main p {
+    font-family: 'Sriracha' Times serif;
+    font-size: 46px;
+    width: 400px;
+}
