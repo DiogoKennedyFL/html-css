@@ -1,47 +1,35 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
 * {
     margin: 0px;
-}
-
-@font-face {
-    font-family: 'PassionOne';
-    src: url(/desafios/MODULO-02/desafio012/fontes/PassionOne-Bold.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Sriracha;
-    src: url(/desafios/MODULO-02/desafio012/fontes/Sriracha-Regular.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    padding: 0px;
 }
 
 :root {
-    --fonte-padrão: Arial, Helvetica, sans-serif;
-    --fonte-titulo: 'PassionOne', Times, serif;
-    --fonte-paragrafo: 'Sriracha' Helvetica, sans-serif;
-    --fonte-rodapé-e-cabeçalho: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3:'Sriracha', cursive;
 }
 
 header {
     background-color: black;
     text-align: center;
-    padding: 100px;
+    padding: 50px;
 }
 
 header > h1 {
     color: white;
-    font-family: var(--fonte-titulo);
-    font-size: 132px;
-    max-width: 1200px;
-    margin: auto;
+    font-family: var(--fonte2);
+    font-size: 4em;
 }
 
 header > p {
     color: white;
-    font-family: var(--fonte-rodapé-e-cabeçalho);
+    font-family: var(--fonte1);
     font-size: 16px;
 }
 
@@ -57,7 +45,7 @@ a:hover {
 main p {
     font-family: 'Sriracha' Times serif;
     font-size: 46px;
-    font-family: var(--fonte-paragrafo);
+    font-family: var(--fonte3);
     padding: 80px 0px 80px 20px;
     line-height: 2em;
 
@@ -87,6 +75,6 @@ main p {
 footer {
     background-color: black;
     color: white;
-    font-family: var(--fonte-rodapé-e-cabeçalho);
+    font-family: var(--fonte3);
     text-align: center;
 }
