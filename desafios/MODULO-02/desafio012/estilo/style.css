@@ -2,12 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
@@ -15,66 +10,99 @@
     --fonte3:'Sriracha', cursive;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
 header {
     background-color: black;
+    color: white;
     text-align: center;
-    padding: 50px;
 }
 
 header > h1 {
-    color: white;
+    padding-top: 50px;
+    font-variant: small-caps;
     font-family: var(--fonte2);
-    font-size: 4em;
+    font-size: 10vw;
 }
+
+/*
+Se quiser anotar algum dia quando ver o codigo
+text-transform: uppercase;
+(deixa tudo maiusculo)
+*/
 
 header > p {
-    color: white;
-    font-family: var(--fonte1);
-    font-size: 16px;
+    padding-bottom: 50px;
 }
 
-a {
+header a, footer a {
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
 
-a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-main p {
-    font-family: 'Sriracha' Times serif;
-    font-size: 46px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; 
+    padding-left: 30px;
     font-family: var(--fonte3);
-    padding: 80px 0px 80px 20px;
-    line-height: 2em;
-
+    font-size: 3.5vw;
 }
 
-#container {
-    height: 100vh;
-    background-color: black;
-    background-image: url('/desafios/MODULO-02/desafio012/imagens/background001.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: scroll;
-    margin: 30px 0px 30px 0px;
+section > p {
+    padding-bottom: 2em;
 }
 
-#container-2 {
-    height: 100vh;
-    background-color: black;
-    background-image: url('/desafios/MODULO-02/desafio012/imagens/background002.jpg');
-    background-position: center center;
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 2px 2px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: scroll;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 footer {
     background-color: black;
     color: white;
-    font-family: var(--fonte3);
     text-align: center;
+    padding: 10px;
 }
