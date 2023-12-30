@@ -2,7 +2,6 @@
 
 * {
     margin: 0px;
-    padding: 0px;
 }
 
 @font-face {
@@ -19,26 +18,75 @@
     font-style: normal;
 }
 
+:root {
+    --fonte-padrão: Arial, Helvetica, sans-serif;
+    --fonte-titulo: 'PassionOne', Times, serif;
+    --fonte-paragrafo: 'Sriracha' Helvetica, sans-serif;
+    --fonte-rodapé-e-cabeçalho: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 header {
     background-color: black;
     text-align: center;
     padding: 100px;
 }
 
-header h1 {
+header > h1 {
     color: white;
-    font-family: 'PassionOne', Times, serif;
+    font-family: var(--fonte-titulo);
     font-size: 132px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-header p {
+header > p {
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonte-rodapé-e-cabeçalho);
     font-size: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 main p {
     font-family: 'Sriracha' Times serif;
     font-size: 46px;
-    width: 400px;
+    font-family: var(--fonte-paragrafo);
+    padding: 80px 0px 80px 20px;
+    line-height: 2em;
+
+}
+
+#container {
+    height: 100vh;
+    background-color: black;
+    background-image: url('/desafios/MODULO-02/desafio012/imagens/background001.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+    margin: 30px 0px 30px 0px;
+}
+
+#container-2 {
+    height: 100vh;
+    background-color: black;
+    background-image: url('/desafios/MODULO-02/desafio012/imagens/background002.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: var(--fonte-rodapé-e-cabeçalho);
+    text-align: center;
 }
