@@ -20,6 +20,8 @@
 }
 
 html, body {
+    min-height: 100vh;
+    min-width: 100vw;
     background-image: linear-gradient(to right, #9A49B3, #BB30E6, #312833);
     font-family: var(--font1);
     color: white;
@@ -33,7 +35,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-    background-color: var(--cor4);
 }
 
 header {
@@ -74,11 +75,20 @@ span {
 
 }
 
-section.seção {
+section#projetos {
     background-color: white;
     color: black;
-    margin-top: 20px;
-    display: flex;
+}
+
+article.seção {
+    background-color: #493e4c44;
+    border-radius: 15px;
+    text-align: center;
+    margin: 50px;
+    display: inline-block;
+    width: 200px;
+    height: 400px;
+    
 }
 
 footer {
