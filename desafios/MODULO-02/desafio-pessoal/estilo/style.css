@@ -60,21 +60,6 @@ span {
     font-size: 4vw;
 }
 
-section#projetos {
-    background-color: white;
-    color: black;
-}
-
-article.seção {
-    background-color: #493e4c44;
-    border-radius: 15px;
-    text-align: center;
-
-    display: inline-block;
-    width: 200px;
-    height: 400px;
-}
-
 footer {
     background-color: var(--cor5);
     color: white;
