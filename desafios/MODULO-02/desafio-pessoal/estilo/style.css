@@ -20,7 +20,7 @@
 }
 
 html, body {
-    width: 100vw;
+    height: 100vh;
     background-image: linear-gradient(to right, #9A49B3, #BB30E6, #312833);
     font-family: var(--font1);
     color: white;
@@ -89,7 +89,7 @@ span {
     font-size: 6vw;
 }
 
-.apresentação > p{
+.apresentação > p {
     margin-top: 15px;
 } 
 
@@ -97,6 +97,14 @@ span {
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: white;
+    color: black;
+}
+
+.observação {
+    background-color: black;
+    color: white;
+    text-align: justify;
+    font-size: 15px;
 }
 
 footer {
