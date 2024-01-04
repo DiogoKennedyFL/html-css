@@ -29,8 +29,9 @@ html, body {
 
 footer > a {
     color: white;
-    padding: 19px;
+    padding: 0px 19px 19px 19px;
     text-decoration: none;
+    margin: 0;
 }
 
 footer > a:hover {
@@ -40,7 +41,7 @@ footer > a:hover {
 header {
     background-image: linear-gradient(to right, #312833, #493E4C);
     box-shadow: 5px 0px 5px #493E4C;
-    min-height: 120px; 
+    height: 115px; 
     margin-bottom: 30px;
 }
 
@@ -52,8 +53,8 @@ header > h1 {
 
 nav {
     text-align: right;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 nav > a{
@@ -67,7 +68,7 @@ nav > a:hover {
     border-radius: 10px 0px 10px 0px;
     text-decoration: underline;
     transition-duration: 0.7s;
-    padding: 10px;
+    padding: 15px;
 }
 
 section.apresentação {
@@ -75,25 +76,26 @@ section.apresentação {
     text-align: center;
 }
 
-.apresentação > h1 {
-
-}
-
 span {
     text-transform: uppercase;
     font-family: var(--font2);
-    font-size: 6vw;
+    font-size: 50px;
 }
 
 .apresentação > p {
     margin-top: 15px;
+    margin-bottom: 15px;
 } 
 
 .projetos {
-    margin-top: 15px;
     margin-bottom: 15px;
     background-color: white;
     color: black;
+}
+
+.projetos .textos {
+    padding: 13px;
+    text-align: justify;
 }
 
 .observação {
@@ -111,4 +113,36 @@ footer {
     padding: 5px;
 }
 
-@media screen and (max-width:)
+@media screen and (max-width:658px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .apresentação > h1 {
+        font-size: 22px;
+    }
+
+    .apresentação > span {
+        font-size: 35px;
+    }
+
+    .apresentação > p {
+        font-size: 18px;
+    }
+
+    .projetos h1 {
+        text-align: center;
+    }
+
+    .projetos .textos > p {
+        text-align: center;
+    }
+
+    .observação {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
