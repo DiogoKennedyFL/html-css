@@ -12,17 +12,46 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgba(0, 0, 0, 0.744);
             color: white;
+        }
+
+        thead > tr > th /* Dizem que não funciona direito no Safari. (informação de 2022)*/ {
+            position: sticky;
+            top: -1px;
+            background-color: rgba(0, 0, 0, 0.744);
+            /*Código bom para tabelas grandes com diversas informações em várias colunas*/
         }
 
         td, th {
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        /*tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+        Isso para ter a config nos dados de 2 em 2
+        */
+
+        tbody tr:nth-child(odd) /*Modifica números impares. Posso colocar (2n-1)*/ {
+            background-color: white;
+        }
+
+        tbody tr:nth-child(even) /*Modifica números pares. Posso colocar (2n)*/ {
+            background-color: lightgray;
         }
 
         td.num {
@@ -35,6 +64,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -44,10 +74,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -110,10 +141,16 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>0000</strong></td>
             </tr>
         </tfoot>
     </table>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, facere. Explicabo corporis vero magni molestias? Vel reiciendis asperiores illo, ullam inventore delectus, dolorum eaque, maiores voluptatibus velit mollitia facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam similique culpa, rem debitis modi quidem ex architecto dolorem quas. Aperiam et quis suscipit reiciendis accusamus saepe eius neque velit quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, officiis id numquam architecto similique deserunt sequi odio nulla at nisi reprehenderit inventore ipsam, fugiat magni mollitia minus, asperiores rerum ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quasi eaque, in maxime corrupti aperiam excepturi harum. Dolores velit cumque perspiciatis, eligendi fugit, tempore reiciendis suscipit dolore, vero earum quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, libero fugiat! Voluptatum magni minima eligendi in libero! Ipsa, repellendus tempore soluta ipsam, expedita eveniet natus sit incidunt assumenda modi labore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, facere. Explicabo corporis vero magni molestias? Vel reiciendis asperiores illo, ullam inventore delectus, dolorum eaque, maiores voluptatibus velit mollitia facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam similique culpa, rem debitis modi quidem ex architecto dolorem quas. Aperiam et quis suscipit reiciendis accusamus saepe eius neque velit quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, officiis id numquam architecto similique deserunt sequi odio nulla at nisi reprehenderit inventore ipsam, fugiat magni mollitia minus, asperiores rerum ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quasi eaque, in maxime corrupti aperiam excepturi harum. Dolores velit cumque perspiciatis, eligendi fugit, tempore reiciendis suscipit dolore, vero earum quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, libero fugiat! Voluptatum magni minima eligendi in libero! Ipsa, repellendus tempore soluta ipsam, expedita eveniet natus sit incidunt assumenda modi labore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, facere. Explicabo corporis vero magni molestias? Vel reiciendis asperiores illo, ullam inventore delectus, dolorum eaque, maiores voluptatibus velit mollitia facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam similique culpa, rem debitis modi quidem ex architecto dolorem quas. Aperiam et quis suscipit reiciendis accusamus saepe eius neque velit quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, officiis id numquam architecto similique deserunt sequi odio nulla at nisi reprehenderit inventore ipsam, fugiat magni mollitia minus, asperiores rerum ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quasi eaque, in maxime corrupti aperiam excepturi harum. Dolores velit cumque perspiciatis, eligendi fugit, tempore reiciendis suscipit dolore, vero earum quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, libero fugiat! Voluptatum magni minima eligendi in libero! Ipsa, repellendus tempore soluta ipsam, expedita eveniet natus sit incidunt assumenda modi labore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, facere. Explicabo corporis vero magni molestias? Vel reiciendis asperiores illo, ullam inventore delectus, dolorum eaque, maiores voluptatibus velit mollitia facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam similique culpa, rem debitis modi quidem ex architecto dolorem quas. Aperiam et quis suscipit reiciendis accusamus saepe eius neque velit quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, officiis id numquam architecto similique deserunt sequi odio nulla at nisi reprehenderit inventore ipsam, fugiat magni mollitia minus, asperiores rerum ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quasi eaque, in maxime corrupti aperiam excepturi harum. Dolores velit cumque perspiciatis, eligendi fugit, tempore reiciendis suscipit dolore, vero earum quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, libero fugiat! Voluptatum magni minima eligendi in libero! Ipsa, repellendus tempore soluta ipsam, expedita eveniet natus sit incidunt assumenda modi labore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, facere. Explicabo corporis vero magni molestias? Vel reiciendis asperiores illo, ullam inventore delectus, dolorum eaque, maiores voluptatibus velit mollitia facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam similique culpa, rem debitis modi quidem ex architecto dolorem quas. Aperiam et quis suscipit reiciendis accusamus saepe eius neque velit quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, officiis id numquam architecto similique deserunt sequi odio nulla at nisi reprehenderit inventore ipsam, fugiat magni mollitia minus, asperiores rerum ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quasi eaque, in maxime corrupti aperiam excepturi harum. Dolores velit cumque perspiciatis, eligendi fugit, tempore reiciendis suscipit dolore, vero earum quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, libero fugiat! Voluptatum magni minima eligendi in libero! Ipsa, repellendus tempore soluta ipsam, expedita eveniet natus sit incidunt assumenda modi labore.</p>
 </body>
 </html>
