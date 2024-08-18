@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="iname">Nome:</label>
+                <input type="text" name="name" id="iname" minlength="5" maxlength="20" autocomplete="name" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel"
+                pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx"
+                required>
+            </p>
+        </fieldset> 
+        
+        <!-- O fieldset ele agrupa todo o campo (TRADUÇÃO DE FIELDSET: grupo de campos)-->
+
+        <!-- Se quiser, você pode colocar a tag legend (tradução: legenda), (tem que está dentro do fieldset a tag) para que fique um nome entre a borda que é criada pelo field set para informar o que é aquele campo como no exemplo deste código (você pode ver como que ele está comportado pelo site deste código)-->
+
+        <!-- Estudar mais sobre RegEx -->
+         <!-- O QUE TA DENTRO DO PATTERN É EXPRESSÃO REGULAR (RegEx)
+         
+         Lembrando, nenhum deles (RegEx) é suficiente para deixar passar ou bloquear um tipo de dado errado. Você só vai conseguir/fazer em JavaScript ou PHP mais para frente.
+         -->
+
+        <!-- Toda expressão regular começa com um ponto circunflexo (^) e termina com um cifrão ($). Podemos colocar dentro da tag pattern
+         exemplo de um:
+          -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

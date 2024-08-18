@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="Sexo" id="imas" value="M">
+            <label for="imas">Masculino</label><br>
+            <input type="radio" name="Sexo" id="ifem" value="F" checked>
+            <label for="ifem">Feminino</label>
+
+            <!-- 
+            O Botão de Opção (radio) é o tipo do elemento INPUT que possibilita a construção de um grupo de opções exclusivas - somente uma opção pode ser escolhida dentro do grupo. 
+            
+            Para que funcione, que você possa apertar apenas um botão e não os dois sem poder retirar/desmarcar depois, você tem que dar o MESMO NAME PARA AS OPÇÕES!!
+
+            assim você consegue escolher apenas uma opção, podendo selecionar exatamente o que você quer, foi o que fiz no código acima. Se quiser testar para entender o que eu digo, mexa no name dos dois input acima que estão com o tipo radio acima para compreender.
+            -->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+
+                <input type="checkbox" name="esbas" id="iesbas">
+                <label for="iesbas">Basquete</label><br>
+
+                <input type="checkbox" name="esfut" id="iesfut" checked>
+                <label for="iesfut">Futebol</label><br>
+
+                <input type="checkbox" name="esnat" id="iesnat">
+                <label for="iesnat">Natação</label><br>
+
+
+                <input type="checkbox" name="esten" id="iesten">
+                <label for="iesten">Tênis</label><br>
+
+                <!-- Uma dica, se colocar o checked dentro do INPUT, ele já irá marcar aquela caixa automaticamente sem ter que fazer nada, ele pode ser usado para marcar opções que são mais gerais/que mais escolhem por exemplo. Coloquei a tag checked dentro de um dos inputs acima para entender o que eu digo. (Assinado: De mim para eu mesmo do futuro k)-->
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
