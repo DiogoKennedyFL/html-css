@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            margin: 10px 10px 35px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tarefas</h1>
+    <p>Essas são as tarefas, tópicos na qual eu devo estudar no mínimo por cada matéria e colocar que estudei nas caixinhas quando eu tiver realmente estudado sobre o conteúdo.</p>
+    <p>Não coloque ele marcando e enviando (este site foi apenas para me testar junto também sobre o que eu aprendi), coloque no proprio código o checked dentro do input.</p>
+
+    <form action="cadastro.php" method="get">
+        <fieldset id="Geografia">
+            <legend>Geografia: </legend>
+            <label for="igeo1">Impactos Ambientais e a sustentabilidade.</label>
+            <input type="checkbox" name="geo1" id="igeo1"><br>
+
+            <label for="igeo2">Agricultura.</label>
+            <input type="checkbox" name="geo2" id="igeo2"><br>
+
+            <label for="igeo3">Geopolítica.</label>
+            <input type="checkbox" name="geo3" id="igeo3">
+        </fieldset>
+
+        <fieldset id="História">
+            <legend>História: </legend>
+            <label for="ihis1">Segundo Reinado.</label>
+            <input type="checkbox" name="his1" id="ihis1"><br>
+
+            <label for="ihis2">Séculos XVI e XVII.</label>
+            <input type="checkbox" name="his2" id="ihis2"><br>
+
+            <label for="ihis3">Conceitos e Cultura.</label>
+            <input type="checkbox" name="his3" id="ihis3">
+        </fieldset>
+
+        <fieldset id="Sociologia">
+            <legend>Sociologia: </legend>
+            <label for="isoc1">Problemas sociais.</label>
+            <input type="checkbox" name="soc1" id="isoc1"><br>
+
+            <label for="isoc2">Direitos.</label>
+            <input type="checkbox" name="soc2" id="isoc2"><br>
+
+            <label for="isoc3">	Fenômenos sociais.</label>
+            <input type="checkbox" name="soc3" id="isoc3">
+        </fieldset>
+
+        <fieldset id="Filosofia">
+            <legend>Filosofia: </legend>
+            <label for="ifil1">Principais teóricos medievais.
+            </label>
+            <input type="checkbox" name="fil1" id="ifil1"><br>
+            <label for="ifil2">Conceitos sobre a Modernidade. <label>
+            <input type="checkbox" name="fil2" id="ifil2"><br>
+            <label for="isoc3">	Política Moderna.</label>
+            <input type="checkbox" name="fil3" id="ifil3">
+        </fieldset>
+
+        <fieldset id="Linguagens e suas tecnologias">
+            <legend>Linguagens e suas tecnologias:</legend>
+            <label for="iling1">Gêneros textuais.</label>
+            <input type="checkbox" name="ling1" id="iling1"><br>
+            <label for="iling2">Textos não literários.</label>
+            <input type="checkbox" name="ling2" id="iling2"><br>
+            <label for="iling3">Textos literários.</label>
+            <input type="checkbox" name="ling3" id="iling3">
+        </fieldset>
+
+        <fieldset id="REDAÇÃO">
+            <legend>REDAÇÃO:</legend>
+            <label for="ireda1">Problemas sociais.</label>
+            <input type="checkbox" name="reda1" id="ireda1">
+        </fieldset>
+
+        <fieldset id="Química:">
+            <legend>Química:</legend>
+            <label for="iquim1">Matéria e suas transformações.</label>
+            <input type="checkbox" name="quim1" id="iquim1"><br>
+            <label for="iquim2">Eletroquímica.</label>
+            <input type="checkbox" name="quim2" id="iquim2"><br>
+            <label for="iquim3">Reações orgânicas.</label>
+            <input type="checkbox" name="quim3" id="iquim3">
+        </fieldset>     
+
+        <fieldset id="Física:">
+            <legend>Física:</legend>
+            <label for="iquim1">Eletrodinâmica.</label>
+            <input type="checkbox" name="quim1" id="iquim1"><br>
+            <label for="iquim2">Calorimetria.</label>
+            <input type="checkbox" name="quim2" id="iquim2"><br>
+            <label for="iquim3">Cinemática.</label>
+            <input type="checkbox" name="quim3" id="iquim3">
+        </fieldset>     
+        
+        <fieldset id="Biologia:">
+            <legend>Biologia:</legend>
+            <label for="ibio1">Cadeias, pirâmides e teias alimentares.</label>
+            <input type="checkbox" name="bio1" id="ibio1"><br>
+            <label for="ibio2">Engenharia genética.</label>
+            <input type="checkbox" name="bio2" id="ibio2"><br>
+            <label for="ibio3">Respiração celular e fermentação.</label>
+            <input type="checkbox" name="bio3" id="ibio3">
+        </fieldset> 
+
+        <fieldset id="Matématica:">
+            <legend>Matématica:</legend>
+            <label for="iquim1">Proporcionalidade.</label>
+            <input type="checkbox" name="quim1" id="iquim1"><br>
+            <label for="iquim2">Estatística.</label>
+            <input type="checkbox" name="quim2" id="iquim2"><br>
+            <label for="iquim3">Geometria espacial.</label>
+            <input type="checkbox" name="quim3" id="iquim3">
+        </fieldset> 
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
