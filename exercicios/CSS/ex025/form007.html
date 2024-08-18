@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <!-- Coloquei o method post para não haver limitação de nada de informações para o usuário possa ter mais liberdade.
+        Como já disse antes, todo formulário com o method="get" tem uma limitação de 3000 bytes
+        -->
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest">
+                
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+
+            <!-- O select é justamente para selecionar, ainda é uma espécie de caixa como input, (mas claro, ele é uma tag que não é um input) mas é de seleção. Aí nele você deve colocar option (opção) para aparecer na caixa como opção -->
+
+            <!-- O optgroup ele agrupa as opções, podendo até mesmo colocar um label onde podemos nomear o que é cada coisa dentro da caixinha, separar, veja o site deste código para entender o que eu digo. -->
+
+            <!-- O selected dentro do option, ele já deixa selecionado como padrão a opção dentro da caixa -->
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+            <!-- A datalist é justamente para colocar uma lista, só que ele só aparecerá se você colocar um id de um nome qualquer, e a tag list dentro do input com o mesmo nome do id da datalist.
+            O option pode ter value ou não se você quiser.
+            O navegador ele colocará uma profissão de recomendação caso em algum momento você já tenha escolhido algum, aí ele pode aparecer o mesmo. 
+            -->
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem..."></textarea>
+        </p>
+
+        <!-- O textarea é onde o usuário pode colocar uma mensagem de texto, um comentário dentro da caixa.
+        O cols é coluna e o row é linha, e isso não é limite de mensagem, NÃO EXISTE MÁXIMO EM TEXTAREA, textarea é infinito. 
+        O usuário ele pode aumentar e/ou diminuir o textarea (área de texto) como ele quiser :)
+        -->
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
