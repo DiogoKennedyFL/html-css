@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!-- Para enviar fotos, o method TEM que SER o POST ("post"). Até porque também o GET só suporta até 3000 bites..-->
+        <p>
+            <label for="icor">
+                <input type="color" name="cor" id="icor" value="#00ff00">
+            </label>
+        </p>
+        <p>
+            <label for="inivel">Nível de Satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5"
+            value="5">
+            <!-- Input tipo range ele cria um nível onde você pode aumentar ou diminuir,
+             ele é um nível originalmente vale de 0 a 100 sem colocar nada, mas você pode mudar este valor colocando o min (minimo) junto com o número mínimo, e o max (máximo) junto com o número máximo que você escolher -->
+        </p>
+        <p>
+            <label for="ifoto">Foto de perfil:</label>
+            <input type="file" name="foto" id="ifoto">
+
+            <!-- O imput image, a imagem que irá aparecer quem escolhe não é o visitante, mas sim você que está programando o código, você que escolhe. -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
